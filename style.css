@@ -4,10 +4,11 @@
   --timeHeight: 60px;
   --calBgColor: #fff1f8;
   --eventBorderColor: #f2d3d8;
-  --eventColor1: #ffd6d1;
+  --eventColor1: #d1ffe6;
   --eventColor2: #fafaa3;
   --eventColor3: #e2f8ff;
-  --eventColor4: #d1ffe6;
+  --eventColor4: #ffd6d1;
+  --eventColor5: #fff;
 }
 
 .calendar {
@@ -37,6 +38,10 @@
 }
 
 /* Place on Timeline */
+.start-9 {
+  grid-row-start: 1;
+}
+
 .start-10 {
   grid-row-start: 2;
 }
@@ -51,6 +56,10 @@
 
 .start-2 {
   grid-row-start: 6;
+}
+
+.start-4 {
+  grid-row-start: 8;
 }
 
 .end-12 {
@@ -70,7 +79,7 @@
 }
 
 .end-5 {
-  grid-row-end: 9;
+  grid-row-end: 12;
 }
 
 /* Event */
@@ -99,20 +108,24 @@ body {
   font-family: system-ui, sans-serif;
 }
 
-.corp-fi {
+.daily {
   background: var(--eventColor1);
 }
 
-.ent-law {
+.tasks {
   background: var(--eventColor2);
 }
 
-.writing {
+.call {
   background: var(--eventColor3);
 }
 
-.securities {
+.meeting {
   background: var(--eventColor4);
+}
+
+.learnings {
+  background: var(--eventColor5);
 }
 
 .date {
